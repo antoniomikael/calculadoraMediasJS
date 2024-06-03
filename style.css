@@ -27,7 +27,7 @@ header h1{
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -60%);
 }
 form{
     display: flex;
