@@ -8,7 +8,14 @@ const atividades = [];
 const notas = [];
 const spanAprovado = '<span class="resultado aprovado">Aprovado</span>';
 const spanReprovado = '<span class="resultado reprovado">Reprovado</span>';
-const notaMinima = prompt('Digite a média de acordo com sua instituição');
+let notaMinima;
+
+do{
+  const input = prompt('Digite a média de acordo com sua instituição');
+  notaMinima = Number(input);
+}
+while(isNaN(notaMinima) || !Number.isInteger(notaMinima));
+
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
